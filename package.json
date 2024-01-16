@@ -1,0 +1,28 @@
+{
+  "name": "learn-atelier",
+  "version": "1.0.0",
+  "description": "Locally Executed Assistants for Research Navigation",
+  "main": "src/main.js",
+  "author": "Nicolas Agostini",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.1.3",
+    "electron-builder": "^24.9.1"
+  },
+  "optionalDependencies": {
+    "dmg-license": "^1.0.11"
+  }
+}
